@@ -5,8 +5,9 @@ const audioContainer = document.getElementById('audio-container')
 
 //connect to the pper server with "undefined" ID (generates uuid instead)
 const myPeer = new Peer(undefined, {
-  host: '/',
-  port: '3001'
+  secure: true,
+  host: 'audp2p.herokuapp.com/',
+  port: '443'
 })
 
 //userID and call storage
